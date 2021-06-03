@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>全自动智能疫苗注射系统</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/animate.css">
+   <link rel="stylesheet" href="css/prettyPhoto.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
+</head>
+
+<body οnlοad="init(); window.setTimeout('show_secs()',1);">
+   
+   <div id="preloader">      
+      <div id="status">
+         <img src="images/preloader.gif" height="64" width="64" alt="">
+      </div>
+   </div>
+
+   <!-- Header
+   ================================================== -->
+   <header>
+      <!--div class="logo">
+         <a class="title" href="#hero">
+            <img alt="" src="images/logo.png" height="30" width="200">
+         </a>
+      </div-->
+
+      <nav id="nav-wrap">         
+         <img alt="" src="images/logo.png" height="30" width="200">
+         <!--a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show Menu</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide Menu</a-->         
+
+         <!--ul id="nav" class="nav">
+            <li><a class="smoothscroll" href="#features">Features</a></li>
+	         <li><a class="smoothscroll" href="#pricing">Pricing</a></li>
+            <li><a class="smoothscroll" href="#screenshots">Screenshots</a></li>
+            <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
+            <li><a class="smoothscroll" href="#subscribe">Subscribe</a></li>
+         </ul--> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <!--ul class="header-social">
+         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+         <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+      </ul-->
+
+   </header> <!-- Header End -->
+   <script language="javascript">  
+              
+      var ap_name = navigator.appName;  
+      var ap_vinfo = navigator.appVersion;  
+      var ap_ver = parseFloat(ap_vinfo.substring(0,ap_vinfo.indexOf('(')));// 获取版本号
+      var time_start = new Date();  
+      var clock_start = time_start.getTime();  
+      var dl_ok=false;  
+      function init (){  
+      if(ap_name=="netscape" && ap_ver>=3.0)  
+          dl_ok=true;   
+          return true;  
+      }  
+   //已经打开页面多少秒
+      function get_time_spent (){   
+          var time_now = new Date();  
+          return((time_now.getTime() - clock_start)/1000);   
+      }  
+      function show_secs (){  // show the time user spent on the side           
+          var i_total_secs = Math.round(get_time_spent());   
+          var i_secs_spent = i_total_secs % 60;  
+          var i_mins_spent = Math.round((i_total_secs-30)/60);//四舍五入，超60s，大于0.5，四舍五入就是1min   
+          var s_secs_spent = "" + ((i_secs_spent>9) ? i_secs_spent : "0" + i_secs_spent);//改显示格式：个位数-> 0+个位数，如7->07
+          var s_mins_spent ="" + ((i_mins_spent>9) ? i_mins_spent : "0" + i_mins_spent);  
+          document.fm0.time_spent.value = s_mins_spent + ":" + s_secs_spent;  //把值放入form中name为time_spent的input中
+          window.setTimeout('show_secs()',1000);   //每隔1s刷新一次input里的值
+      }  
+       
+  </script>  
+
+
+   <!-- Homepage Hero
+   ================================================== -->
+   <section id="hero">
+
+	   <div class="row">
+
+		   <div class="twelve columns">
+
+			   <div class="hero-text">
+				   <h1 class="responsive-headline"><br><br>请您仔细阅读接种须知<br>
+                  Please read notice for vaccination carefully<br><br></h1>
+                  <font color=#f5f5f5 style="font-size:17px"><font color= #11ABB0 style="font-size:20px">适用对象</font><br>
+
+                    
+                    18周岁及以上人群<br><br>
+                    
+                    <font color= #11ABB0 style="font-size:20px">接种剂次和间隔 </font><br>
+                    
+                    新冠病毒灭活疫苗（Vero细胞）：接种2剂，2剂之间的接种间隔建议≥3周，第2剂在8周内尽早完成。<br>
+                    
+                    重组新冠病毒疫苗（5型腺病毒载体）：接种1剂。<br>
+                    
+                    重组新冠病毒疫苗（CHO细胞）：接种3剂，相邻2剂之间的接种间隔建议≥4周。第2剂尽量在接种第1剂次后8周内完成，第3剂尽量在接种第1剂次后6个月内完成。<br>
+                    
+                    对2剂或3剂次程序的疫苗，未按程序完成接种者，建议尽早补种。免疫程序无需重新开始，补种完成相应剂次即可。<br>
+                    
+                    对在14天内完成2剂新冠病毒灭活疫苗接种者，在第2剂接种3周后尽早补种1剂灭活疫苗。<br>
+                    
+                    对在14-21天完成2剂新冠病毒灭活疫苗接种的，无需补种。<br><br>
+                    
+                    
+                    
+                    <font color= #11ABB0 style="font-size:20px">接种禁忌</font><br>
+                    
+                    通常的疫苗接种禁忌包括：<br>
+                    
+                    （1）对疫苗的活性成分、任何一种非活性成分、生产工艺中使用的物质过敏者，或以前接种同类疫苗时出现过敏者；<br>
+                    
+                    （2）既往发生过疫苗严重过敏反应者（如急性过敏反应、血管神经性水肿、呼吸困难等）；<br>
+                    
+                    （3）患有未控制的癫痫和其他严重神经系统疾病者（如横贯性脊髓炎、格林巴利综合症、脱髓鞘疾病等）；<br>
+                    
+                    （4）正在发热者，或患急性疾病，或慢性疾病的急性发作期，或未控制的严重慢性病患者；<br>
+                    
+                    （5）妊娠期妇女。<br><br>
+                    
+                    
+                    
+                    <font color= #11ABB0 style="font-size:20px">特定人群接种建议</font><br>
+                    
+                    60岁及以上人群<br>
+                    
+                    目前，针对该人群Ⅲ期临床试验研究数据有限，暂无疫苗对该人群的保护效力数据。但Ⅰ/Ⅱ期临床研究数据显示，该人群疫苗接种安全性良好，提示疫苗对60岁以上人群也会产生一定的保护作用，建议接种。<br>
+                    
+                    18岁以下人群<br>
+                    
+                    目前已有的疫苗尚未获得用于该人群的临床试验数据，暂不推荐18岁以下人群接种。<br>
+                    
+                    慢性病人群
+                    
+                    健康状况稳定，药物控制良好的慢性病人群不作为新冠病毒疫苗接种禁忌人群，建议接种。<br><br>
+                    
+                    
+                    
+                    育龄期和哺乳期女性<br>
+                    
+                    （1）如果在接种后怀孕或在未知怀孕的情况下接种了疫苗，不推荐仅因接种新冠病毒疫苗而采取特别医学措施（如终止妊娠），建议做好孕期检查和随访。<br>
+                    
+                    （2）对于有备孕计划的女性，不必仅因接种新冠病毒疫苗而延迟怀孕计划。<br>
+                    
+                    （3）目前尚无哺乳期女性接种新冠病毒疫苗对哺乳婴幼儿有影响的临床研究数据，但建议对新冠病毒感染高风险的哺乳期女性（如医务人员等）接种疫苗。<br>
+                    
+                    （4）考虑到母乳喂养对婴幼儿营养和健康的重要性，哺乳期女性接种新冠病毒疫苗后，建议继续母乳喂养。<br><br>
+                    
+                    免疫功能受损人群<br>
+                    
+                    目前尚无新冠病毒疫苗对该人群（例如恶性肿瘤、肾病综合征、艾滋病患者）、人类免疫缺陷病毒（HIV）感染者的安全性和有效性数据。<br>
+                    
+                    该类人群疫苗接种后的免疫反应及保护效果可能会降低。<br>
+                    
+                    对于灭活疫苗和重组亚单位疫苗，根据既往同类型疫苗的安全性特点，建议接种；<br>
+                    
+                    对于腺病毒载体疫苗，虽然所用载体病毒为复制缺陷型，但既往无同类型疫苗使用的安全性数据，建议经充分告知，个人权衡获益大于风险后接种。<br>
+                    
+                    既往新冠患者或感染者<br>
+                    
+                    现有研究数据表明，新冠病毒感染后6个月内罕见再次感染发病的情况。<br>
+                    
+                    既往新冠肺炎病毒感染者（患者或无症状感染者），在充分告知基础上，可在6个月后接种1剂。<br><br>
+                    
+                    
+                    
+                    <font color= #11ABB0 style="font-size:20px">其他事项</font><br>
+                    
+                    1、加强免疫<br>
+                    
+                    现阶段暂不推荐加强免疫。<br>
+                    
+                    2、与其他疫苗同时接种<br>
+                    
+                    暂不推荐与其他疫苗同时接种。其他疫苗与新冠病毒疫苗的接种间隔应大于14天。<br>
+                    
+                    当因动物致伤、外伤等原因需接种狂犬病疫苗、破伤风疫苗、免疫球蛋白时，可不考虑与新冠病毒疫苗的接种间隔。<br>
+                    
+                    3、不同疫苗产品替换<br>
+                    
+                    现阶段建议用同一个疫苗产品完成接种。如遇疫苗无法继续供应、受种者异地接种等特殊情况，无法用同一个疫苗产品完成接种时，可采用相同种类的其他生产企业的疫苗产品完成接种。
+                    
+                    4、新冠病毒感染及抗体筛查<br>
+                    
+                    在疫苗接种前无需开展新冠病毒核酸及抗体检测；接种后也不建议常规检测抗体作为免疫成功与否的依据。<br><br>
+                    
+                    当前您接种的是 <font color="red" style="font-size:20px"> 科兴公司 </font> 的第<font color="red" style="font-size:20px"> 1 </font>针 （共2针）<br><br>
+                  </font>
+				   
+			   </div>
+
+            <div class="buttons">
+               <a class="button trial" href="processing.html">我已仔细阅读 确定接种疫苗</a>
+            </div>
+
+            <!--div class="hero-image">
+               <img src="images/hero-image.png" alt="" />
+            </div-->
+
+		   </div>
+
+	   </div>
+
+   </section> <!-- Homepage Hero end -->
+
+   <!-- Footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">         
+
+         <div class="six columns info">
+
+            <!--div class="footer-logo">
+               <a href="#">
+                  <img src="images/footer-logo.png" alt="" />
+               </a>
+            </div-->
+
+            <p>希望全自动智能疫苗注射装置能帮助减轻医护人员的负担<br>
+               抗击疫情 我们在一起
+            </p>
+
+         </div>
+
+         <div class="six columns right-cols">
+
+            <div class="row">
+
+               <div class="columns">
+                  <h3 class="address">地址<br>Come Visit</h3>
+                  <ul>
+                  <li><a href="https://cn.bing.com/maps?q=%E5%90%8C%E6%B5%8E%E5%A4%A7%E5%AD%A6+%E5%98%89%E5%AE%9A%E6%A0%A1%E5%8C%BA&cvid=9b8564ecaa1143fca07ad241d8a63ba0&aqs=edge..69i57j0l2j69i60l2j69i65j69i60.11920j0j1&pglt=131&FORM=ANNTA1&PC=U531">
+                  曹安公路4800号<br>同济大学，中国上海<br> 
+                  4800 Caoan Road<br>
+                  Tongji university<br>
+                  Shanghai CN
+                  </a></li></ul>
+               </div>
+
+               <div class="columns">
+                  <h3 class="social">小组成员<br>Team Members</h3>
+                  <ul>
+                     <li>童辰威 Chenwei Tong</li>
+                     <li>吴昕阳 Xinyang Wu</li>
+                     <li>顾洪州 Hongzhou Gu</li>
+                     <li>宋子铭 Ziming Song</li>
+                  </ul>
+               </div>
+
+               <div class="columns last">
+                  <h3 class="contact">联系我们<br>Contact Us</h3>
+                  <ul>
+                    <li><a href="https://github.com/Iris-Song/">Github</a></li>
+                  </ul>
+               </div>
+
+            </div> <!-- Nested Row End -->
+
+         </div>
+
+         <p class="copyright">&copy; 2021 </p>
+
+         <!--div id="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#hero"><i class="icon-up-open"></i></a>
+         </div-->
+
+      </div> <!-- Row End -->
+
+   </footer> <!-- Footer End-->
+
+
+   <!-- Java Script
+   ================================================== -->
+   <!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script-->
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/jquery.fitvids.js"></script>
+   <script src="js/imagelightbox.js"></script>
+  
+   <script src="js/main.js"></script>
+
+</body>
+
+</html>
