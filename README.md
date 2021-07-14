@@ -5,4 +5,4 @@ Innovation & Entrepreneurship course design
 
 code is not the most important!
 
-thanks my partner
+thanks my partners
